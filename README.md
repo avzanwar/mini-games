@@ -13,6 +13,7 @@ each game works with both a mouse/keyboard and touch.
 - **Breakout** (`games/breakout/`) — drag or use the arrow keys to steer the paddle.
 - **2048** (`games/2048/`) — swipe or use the arrow keys to slide tiles.
 - **Tetris** (`games/tetris/`) — arrow keys, or drag to move and tap to rotate.
+- **Minesweeper** (`games/minesweeper/`) — tap to clear, long-press or right-click to flag.
 
 ## Run locally
 

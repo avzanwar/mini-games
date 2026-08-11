@@ -16,6 +16,7 @@ each game works with both a mouse/keyboard and touch.
 - **Minesweeper** (`games/minesweeper/`) — tap to clear, long-press or right-click to flag.
 - **Connect Four** (`games/connect-four/`) — tap a column to drop a disc; play the CPU.
 - **Asteroids** (`games/asteroids/`) — arrow keys and space, or the on-screen thumb buttons.
+- **Solitaire** (`games/solitaire/`) — Klondike; tap a card, then tap where to put it.
 
 ## Run locally
 

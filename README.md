@@ -9,6 +9,7 @@ each game works with both a mouse/keyboard and touch.
 ## Games
 
 - **Flappy Bird** (`games/flappy-bird/`) — tap or press Space to flap.
+- **Snake** (`games/snake/`) — swipe or use the arrow keys to turn.
 
 ## Run locally
 

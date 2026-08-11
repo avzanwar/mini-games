@@ -15,6 +15,7 @@ each game works with both a mouse/keyboard and touch.
 - **Tetris** (`games/tetris/`) — arrow keys, or drag to move and tap to rotate.
 - **Minesweeper** (`games/minesweeper/`) — tap to clear, long-press or right-click to flag.
 - **Connect Four** (`games/connect-four/`) — tap a column to drop a disc; play the CPU.
+- **Asteroids** (`games/asteroids/`) — arrow keys and space, or the on-screen thumb buttons.
 
 ## Run locally
 

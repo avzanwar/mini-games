@@ -18,6 +18,7 @@ each game works with both a mouse/keyboard and touch.
 - **Asteroids** (`games/asteroids/`) — arrow keys and space, or the on-screen thumb buttons.
 - **Solitaire** (`games/solitaire/`) — Klondike; tap a card, then tap where to put it.
 - **Sudoku** (`games/sudoku/`) — three difficulties, pencil notes, generated fresh each time.
+- **Word Guess** (`games/word-guess/`) — six tries at a five-letter word.
 
 ## Run locally
 

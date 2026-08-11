@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #12161f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overscroll-behavior: none;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+canvas {
+  /* Logical size is 340x460; CSS scales it to fit whatever screen we're on. */
+  aspect-ratio: 17 / 23;
+  height: 100%;
+  max-height: 100vh;
+  max-width: 100vw;
+  touch-action: none;
+  display: block;
+}
+
+.back {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(18, 22, 31, 0.65);
+  color: #e8ecf3;
+  font-size: 0.85rem;
+  text-decoration: none;
+}

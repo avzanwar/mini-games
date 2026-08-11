@@ -1,5 +1,7 @@
 # Mini Games
 
+**Play at <https://avzanwar.github.io/mini-games/>**
+
 A collection of small browser games — plain HTML, CSS and JavaScript. No frameworks,
 no build step, no dependencies. Every file runs straight from a static server, and
 each game works with both a mouse/keyboard and touch.
@@ -29,5 +31,6 @@ from a sub-path like GitHub Pages.
 
 ## Deploying
 
-Push the repo to GitHub and turn on Pages (Settings → Pages → Deploy from branch →
-`main` / root). The site lands at `https://<user>.github.io/mini-games/`.
+GitHub Pages is already enabled for this repo, serving `main` from the root — so
+every push to `main` redeploys <https://avzanwar.github.io/mini-games/> a minute or
+so later. There is no build step and no workflow file; the files are served as-is.

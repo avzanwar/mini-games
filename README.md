@@ -21,6 +21,7 @@ each game works with both a mouse/keyboard and touch.
 - **Word Guess** (`games/word-guess/`) — six tries at a five-letter word.
 - **Doodle Jump** (`games/doodle-jump/`) — endless climb; arrow keys or drag to steer.
 - **Tower Defense** (`games/tower-defense/`) — buy turrets, survive the waves.
+- **Mini Golf** (`games/mini-golf/`) — nine holes; drag back from the ball to putt.
 
 ## Run locally
 

@@ -20,6 +20,7 @@ each game works with both a mouse/keyboard and touch.
 - **Sudoku** (`games/sudoku/`) — three difficulties, pencil notes, generated fresh each time.
 - **Word Guess** (`games/word-guess/`) — six tries at a five-letter word.
 - **Doodle Jump** (`games/doodle-jump/`) — endless climb; arrow keys or drag to steer.
+- **Tower Defense** (`games/tower-defense/`) — buy turrets, survive the waves.
 
 ## Run locally
 

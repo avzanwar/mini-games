@@ -9,108 +9,153 @@
 <body>
   <header>
     <h1>Mini Games</h1>
-    <p>Small games you can play in the browser, on your phone or your laptop.</p>
+    <p>Fourteen small games you can play in the browser, on your phone or your laptop.</p>
   </header>
 
-  <ul class="games">
-    <li>
-      <a href="games/flappy-bird/">
-        <span class="emoji">🐦</span>
-        <span class="name">Flappy Bird</span>
-        <span class="desc">Tap to flap. Don't hit the pipes.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/snake/">
-        <span class="emoji">🐍</span>
-        <span class="name">Snake</span>
-        <span class="desc">Eat, grow, don't bite yourself.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/breakout/">
-        <span class="emoji">🧱</span>
-        <span class="name">Breakout</span>
-        <span class="desc">Bounce the ball, clear the wall.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/2048/">
-        <span class="emoji">🔢</span>
-        <span class="name">2048</span>
-        <span class="desc">Slide tiles, merge to 2048.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/tetris/">
-        <span class="emoji">🟪</span>
-        <span class="name">Tetris</span>
-        <span class="desc">Stack the blocks, clear the lines.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/minesweeper/">
-        <span class="emoji">💣</span>
-        <span class="name">Minesweeper</span>
-        <span class="desc">Clear the grid, flag the mines.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/connect-four/">
-        <span class="emoji">🔴</span>
-        <span class="name">Connect Four</span>
-        <span class="desc">Four in a row beats the CPU.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/asteroids/">
-        <span class="emoji">🚀</span>
-        <span class="name">Asteroids</span>
-        <span class="desc">Shoot the rocks, don't get hit.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/solitaire/">
-        <span class="emoji">🃏</span>
-        <span class="name">Solitaire</span>
-        <span class="desc">Klondike patience, one card at a time.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/sudoku/">
-        <span class="emoji">🧩</span>
-        <span class="name">Sudoku</span>
-        <span class="desc">Fill the grid, one to nine.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/word-guess/">
-        <span class="emoji">🔤</span>
-        <span class="name">Word Guess</span>
-        <span class="desc">Six tries at a five-letter word.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/doodle-jump/">
-        <span class="emoji">🦘</span>
-        <span class="name">Doodle Jump</span>
-        <span class="desc">Bounce up, don't fall off.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/tower-defense/">
-        <span class="emoji">🏰</span>
-        <span class="name">Tower Defense</span>
-        <span class="desc">Build turrets, hold the line.</span>
-      </a>
-    </li>
-    <li>
-      <a href="games/mini-golf/">
-        <span class="emoji">⛳</span>
-        <span class="name">Mini Golf</span>
-        <span class="desc">Nine holes, drag to putt.</span>
-      </a>
-    </li>
-  </ul>
+  <nav class="filters" aria-label="Filter games by genre">
+    <button class="chip is-active" data-filter="all" aria-pressed="true">All <span class="count">14</span></button>
+    <button class="chip" data-filter="arcade" aria-pressed="false">Arcade <span class="count">5</span></button>
+    <button class="chip" data-filter="puzzle" aria-pressed="false">Puzzle <span class="count">4</span></button>
+    <button class="chip" data-filter="strategy" aria-pressed="false">Strategy <span class="count">2</span></button>
+    <button class="chip" data-filter="cards" aria-pressed="false">Cards &amp; words <span class="count">2</span></button>
+    <button class="chip" data-filter="sports" aria-pressed="false">Sports <span class="count">1</span></button>
+  </nav>
+
+  <main>
+    <section class="genre" data-genre="arcade">
+      <h2>Arcade</h2>
+      <p class="genre-note">Reflexes and reaction. Short rounds, chasing a high score.</p>
+      <ul class="games">
+        <li>
+          <a href="games/flappy-bird/">
+            <span class="emoji">🐦</span>
+            <span class="name">Flappy Bird</span>
+            <span class="desc">Tap to flap. Don't hit the pipes.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/snake/">
+            <span class="emoji">🐍</span>
+            <span class="name">Snake</span>
+            <span class="desc">Eat, grow, don't bite yourself.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/breakout/">
+            <span class="emoji">🧱</span>
+            <span class="name">Breakout</span>
+            <span class="desc">Bounce the ball, clear the wall.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/asteroids/">
+            <span class="emoji">🚀</span>
+            <span class="name">Asteroids</span>
+            <span class="desc">Shoot the rocks, don't get hit.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/doodle-jump/">
+            <span class="emoji">🦘</span>
+            <span class="name">Doodle Jump</span>
+            <span class="desc">Bounce up, don't fall off.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="genre" data-genre="puzzle">
+      <h2>Puzzle</h2>
+      <p class="genre-note">Shapes, numbers and deduction. Some against the clock, some not.</p>
+      <ul class="games">
+        <li>
+          <a href="games/tetris/">
+            <span class="emoji">🟪</span>
+            <span class="name">Tetris</span>
+            <span class="desc">Stack the blocks, clear the lines.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/2048/">
+            <span class="emoji">🔢</span>
+            <span class="name">2048</span>
+            <span class="desc">Slide tiles, merge to 2048.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/minesweeper/">
+            <span class="emoji">💣</span>
+            <span class="name">Minesweeper</span>
+            <span class="desc">Clear the grid, flag the mines.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/sudoku/">
+            <span class="emoji">🧩</span>
+            <span class="name">Sudoku</span>
+            <span class="desc">Fill the grid, one to nine.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="genre" data-genre="strategy">
+      <h2>Strategy</h2>
+      <p class="genre-note">Plan ahead and outlast whatever is coming at you.</p>
+      <ul class="games">
+        <li>
+          <a href="games/connect-four/">
+            <span class="emoji">🔴</span>
+            <span class="name">Connect Four</span>
+            <span class="desc">Four in a row beats the CPU.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/tower-defense/">
+            <span class="emoji">🏰</span>
+            <span class="name">Tower Defense</span>
+            <span class="desc">Build turrets, hold the line.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="genre" data-genre="cards">
+      <h2>Cards &amp; words</h2>
+      <p class="genre-note">Played at your own pace, a round at a time.</p>
+      <ul class="games">
+        <li>
+          <a href="games/solitaire/">
+            <span class="emoji">🃏</span>
+            <span class="name">Solitaire</span>
+            <span class="desc">Klondike patience, one card at a time.</span>
+          </a>
+        </li>
+        <li>
+          <a href="games/word-guess/">
+            <span class="emoji">🔤</span>
+            <span class="name">Word Guess</span>
+            <span class="desc">Six tries at a five-letter word.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="genre" data-genre="sports">
+      <h2>Sports</h2>
+      <p class="genre-note">Line up the shot and judge the strength.</p>
+      <ul class="games">
+        <li>
+          <a href="games/mini-golf/">
+            <span class="emoji">⛳</span>
+            <span class="name">Mini Golf</span>
+            <span class="desc">Nine holes, drag to putt.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="hub.js"></script>
 </body>
 </html>

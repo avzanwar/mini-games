@@ -11,9 +11,16 @@ body {
   line-height: 1.5;
 }
 
-header {
+header,
+.filters,
+main {
   max-width: 900px;
-  margin: 0 auto 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -27,11 +34,77 @@ header p {
   color: #9aa5b8;
 }
 
+/* Genre filter */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid #2a3348;
+  border-radius: 999px;
+  background: #1b2130;
+  color: #cdd6e4;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease, color 0.12s ease;
+}
+
+.chip:hover {
+  border-color: #4f7cff;
+}
+
+.chip.is-active {
+  background: #2c4a7a;
+  border-color: #4f7cff;
+  color: #fff;
+}
+
+.chip .count {
+  color: #7c8aa3;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.chip.is-active .count {
+  color: #c7d6f5;
+}
+
+/* Genre sections */
+.genre {
+  margin-bottom: 2.5rem;
+}
+
+.genre[hidden] {
+  display: none;
+}
+
+.genre h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e8ecf3;
+}
+
+.genre-note {
+  margin: 0.15rem 0 1rem;
+  color: #7c8aa3;
+  font-size: 0.88rem;
+}
+
+/* Game cards */
 .games {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
